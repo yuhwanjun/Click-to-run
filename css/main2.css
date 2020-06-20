@@ -1,0 +1,189 @@
+@charset 'utf-8';
+:root {
+  cursor: url(../common/cursor3.png), auto;
+}
+
+a {
+  cursor: pointer;
+  cursor: url(../common/pointer.png), pointer;
+}
+
+html {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 14px;
+}
+
+body {
+  overflow-x: hidden;
+  color: #1d1d1f;
+  /* color: rgb(29, 29, 31); */
+  letter-spacing: -0.05em;
+  background: #1d1d1f;
+}
+
+p {
+  line-height: 1.6;
+}
+
+a {
+  color: rgb(29, 29, 31);
+  text-decoration: none;
+}
+
+.local-nav {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 5rem;
+  padding: 0 1rem;
+  font-family: arponasans, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  background-color: #1d1d1f;
+}
+
+.local-nav,
+.local-nav a {
+  color: #404040;
+  text-shadow: 2px 2px 4px #000000, -2px -2px 4px rgba(90, 86, 109, 0.4);
+}
+
+.local-nav-links {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  align-items: center;
+  max-width: 1000px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.link-wrap {
+  grid-column: 1 / 4;
+  grid-row: 2 / 3;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* 현재 위치  */
+.link-wrap .works {
+  color: #a1a1a1;
+}
+
+.link-wrap .students {
+  color: #404040;
+}
+
+.link-wrap .about {
+  color: #404040;
+}
+/* //현재 위치//  */
+
+.local-nav-links {
+  padding-top: 0.4rem;
+}
+
+.local-nav-links a {
+  font-size: 1rem;
+}
+
+.local-nav-links a:hover {
+  color: #a1a1a1;
+}
+
+.local-nav-links .product-name a {
+  font-size: 1.5rem;
+  color: #a1a1a1;
+}
+
+.local-nav-links .sub-title {
+  grid-column: 2 / 4;
+  grid-row: 1 / 2;
+  text-align: right;
+  font-size: 0.8rem;
+  padding-top: 0.3rem;
+}
+/* nav fin  */
+
+#section01 {
+  padding-top: 6rem;
+  height: 1080px;
+  max-width: 1000px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.image-wrap {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.image-box {
+  border: solid #1d1d1f 2px;
+  background: #1d1d1f;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 7rem;
+  font-family: "Noto Sans KR", sans-serif;
+  color: #404040;
+  background-color: #1d1d1f;
+}
+
+@media (min-width: 1024px) {
+  .local-nav-links {
+    display: flex;
+    padding-top: 0;
+  }
+
+  .product-name {
+    text-align: center;
+  }
+
+  .local-nav-links > div {
+    flex: 1;
+  }
+
+  .link-wrap {
+    display: block;
+  }
+
+  .local-nav-links a {
+    font-size: 1.2rem;
+  }
+
+  .link-wrap a:not(.works) {
+    padding-left: 2em;
+  }
+
+  .local-nav-links .product-name a {
+    font-size: 2.2rem;
+  }
+
+  .local-nav-links .sub-title {
+    font-size: 1.3rem;
+  }
+
+  .image-box img {
+    mix-blend-mode: luminosity;
+  }
+
+  .image-box img:hover {
+    mix-blend-mode: normal;
+  }
+}
+
+@media (min-width: 600px) {
+  .image-wrap {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 900px) {
+  .image-wrap {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
