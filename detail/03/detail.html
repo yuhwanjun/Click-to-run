@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>AirMug Pro</title>
+    <link rel="stylesheet" href="../../css/default.css" />
+    <link rel="stylesheet" href="../../css/main2.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <script>
+      (function (d) {
+        var config = {
+            kitId: "wxo1lok",
+            scriptTimeout: 3000,
+            async: true,
+          },
+          h = d.documentElement,
+          t = setTimeout(function () {
+            h.className =
+              h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+          }, config.scriptTimeout),
+          tk = d.createElement("script"),
+          f = false,
+          s = d.getElementsByTagName("script")[0],
+          a;
+        h.className += " wf-loading";
+        tk.src = "https://use.typekit.net/" + config.kitId + ".js";
+        tk.async = true;
+        tk.onload = tk.onreadystatechange = function () {
+          a = this.readyState;
+          if (f || (a && a != "complete" && a != "loaded")) return;
+          f = true;
+          clearTimeout(t);
+          try {
+            Typekit.load(config);
+          } catch (e) {}
+        };
+        s.parentNode.insertBefore(tk, s);
+      })(document);
+    </script>
+  </head>
+
+  <body>
+    <div class="container">
+      <nav class="local-nav">
+        <div class="local-nav-links">
+          <div class="link-wrap">
+            <a href="../../index.html" class="works">Works</a>
+            <a href="#" class="students">Students</a>
+            <a href="#" class="about">About</a>
+          </div>
+          <div class="product-name">
+            <a href="../../index.html">Click to run</a>
+          </div>
+          <div class="sub-title">KMUVCD 2020 1st semester archive</div>
+        </div>
+      </nav>
+
+      <div class="fixed-bg">
+        <img src="img/main01.png" alt="" />
+      </div>
+
+      <div class="fixed-bx">
+        <img style="opacity: 0;" src="img/main01.png" alt="" />
+      </div>
+
+      <section id="section02">
+        <div class="grid-wrap">
+          <div class="grid-name">
+            <hr />
+            <h1>Booklet Design: On the History of the University Festivals</h1>
+            <h2>Lee Daeun</h2>
+          </div>
+          <div class="grid-info">
+            <div class="info-wrap">
+              <div class="bold">name</div>
+              <div>이다은 (19)</div>
+              <div class="bold">subject</div>
+              <div>Digital Printing</div>
+              <div class="bold">print</div>
+              <div>Laser printing (90x128mm)</div>
+              <div class="bold">tages</div>
+              <div>Booklet design<br />Illustration</div>
+            </div>
+          </div>
+          <div class="grid-text">
+            <p>
+              2019년, 1학년 2학기 디지털프린팅 시간에 작업한 소책자
+              디자인입니다. 대학 축제의 역사와 변화 양상 등에 대해 다루었습니다.
+              레이저프린팅으로 인쇄 후, 중철제본했습니다.
+            </p>
+          </div>
+          <div class="grid-imgbx">
+            <div class="img-wrap">
+              <div class="img-wrap-01">
+                <img src="img/detail01.jpg" alt="" />
+              </div>
+              <div class="img-wrap-03">
+                <img src="img/detail04.jpg" alt="" />
+                <img src="img/detail03.jpg" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="grid-connect">
+            <div class="connect-wrap">
+              <div class="bold">connect</div>
+              <div>
+                <a href="https://www.instagram.com/da__eun__note__/?hl=en"
+                  >@da__eun__note__</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="grid-back">
+            <a href="../../index.html">back</a>
+          </div>
+        </div>
+      </section>
+
+      <footer class="footer">
+        © 2020 Kookmin University Visual Communication Design
+      </footer>
+    </div>
+
+    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+  </body>
+</html>
